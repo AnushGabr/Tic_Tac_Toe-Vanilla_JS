@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+    --mark-size: 100;
+  }
+
+.game{
+    display: grid;
+    grid-gap: 0.1px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    
+}
+
+.game1{
+    display: grid;
+    grid-gap: 0.1px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+        
+}
+
+.start{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    margin-top: 60px;
+}
+
+
+.cell{
+    padding: 1rem;
+    border: 2px solid #ddd;
+    text-align: center;
+    background-color: gray;
+    cursor: pointer;
+    font-size: 3.5rem;
+    line-height: 50px;
+}
+
+.player {
+    text-align: center;
+    padding: 0.2rem;
+}
+
+.player .btn{
+    font-size: 1rem;
+    padding: 0.3rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
